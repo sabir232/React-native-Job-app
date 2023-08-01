@@ -13,7 +13,7 @@ import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
 import { ScrollView } from "react-native-gesture-handler";
 const jobTypes = ["Full-Time", "Part-Time", "Contractor"];
-const Welcome = () => {
+const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
   const router = useRouter();
   const [activeJobType, setActiveJobType] = useState("Full-time");
   return (
@@ -26,12 +26,12 @@ const Welcome = () => {
         <View style={styles.searchWrapper}>
           <TextInput
             style={styles.searchInput}
-            value=""
+            value={searchTerm}
             placeholder="What are you looking for?"
-            onChange={() => {}}
+            onChangeText={(text) => setSearchTerm(text)}
           />
         </View>
-        <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
           <Image
             source={icons.search}
             resizeMode="contain"
