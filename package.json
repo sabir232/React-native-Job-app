@@ -1,5 +1,8 @@
 {
-  "name": "react_native_jobs",
+  "name": "Job_Search_App",
+  "slug": "job_search_app",
+  "privacy" : "public",
+  "description": "Awesome App to find the jobs on this app for perfect roll.",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -25,7 +28,8 @@
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0",
-    "react-native-web": "~0.18.7"
+    "react-native-web": "~0.18.7",
+    "expo-updates": "~0.16.4"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
